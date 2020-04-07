@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,300|Source+Sans+Pro:400,300,300italic,400italic");
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0 none;
+}
+
+body {
+    color: #8c8a87;
+    font: normal 16px "Source Code Pro", Arial, Helvetica, sans-serif;
+}
+
+ul {
+    float: right;
+    display: block;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+p {
+    margin: 0;
+}
+
+span.title {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    border: 1px solid #d0dbdd;
+}
+#form .bloco.info input:focus, select:focus, textarea:focus {
+    border-color: #00a6b6;
+}
+
+strong, a {
+    color: #00a6b6;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.clear {
+    display: block;
+    clear: both;
+}
+
+.limite {
+    width: 100%;
+    max-width: 1390px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #00a6b6;
+}
+
+#conteudo .detalhe {
+    height: 15px;
+    padding: 5px 30px 5px;
+    background: #a6b8bc url("imgs/sombra-topo.png") no-repeat center top;
+    background-size: 100% auto;
+    font: 11px Tahoma, Geneva, sans-serif;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    outline: 1px solid #d0dbdd;
+}
+
+#conteudo .detalhe:first-child {
+    border-top: 0 none;
+}
+
+#conteudo .detalhe:last-child {
+    background: #a6b8bc;
+    border-bottom: 0 none;
+}
+
+#cabecalho {
+    margin-bottom: 5px;
+    padding: 20px 0;
+    border-bottom: 1px solid #00a6b6;
+}
+
+#cabecalho .social {
+    margin-top: 10px;
+}
+
+#cabecalho .social .item a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-indent: -9999px;
+}
+
+#cabecalho .social .insta {
+    background: url("imgs/insta.png") no-repeat left top;
+}
+
+#cabecalho .social .face {
+    background: url("imgs/face.png") no-repeat left top;
+}
+
+#cabecalho .social .item a:hover {
+    background-position: left bottom;
+}
+
+#video {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+
+#video iframe, #video object, #video embed {
+    position:absolute;
+    top:0;
+    left:0;
+    max-width:100%;
+    height:100%;
+}
+
+#texto {
+    margin-top: 5px;
+    padding: 45px 0 45px 45px;
+    text-align: left;
+    border-top: 1px solid #00a6b6;
+    border-bottom: 1px solid #d0dbdd;
+}
+
+#texto .title {
+    float: left;
+    width: 230px;
+    height: 265px;
+    margin-right: 40px;
+    background: url("imgs/mascote.png") no-repeat left bottom;
+}
+
+#texto div {
+    min-height: 265px;
+}
+
+#form > .title {
+    margin: 35px 0;
+}
+
+#form form {
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+    border: 1px solid #00a6b6;
+}
+
+#form .bloco {
+    padding: 15px 0 15px 25px;
+    color: #00a6b6;
+    border-bottom: 1px solid #d0dbdd;
+}
+
+#form .bloco.info {
+    color: #8c8a87;
+}
+
+#form .bloco.ref {
+    border: 0 none;
+}
+
+#form .bloco .left, #form .bloco .right {
+    width: 50%;
+}
+
+#form .bloco .left {
+    float: left;
+    padding-right: 30px;
+    border-right: 1px solid #00a6b6;
+}
+
+#form .bloco .right {
+    float: right;
+    padding-left: 30px;
+}
+
+#form .bloco.info .left, #form .bloco.ref .left {
+    border-right: 0 none;
+}
+
+#form .bloco.info label {
+    display: inline-block;
+    width: 100px;
+    font-size: 18px;
+    text-align: right;
+}
+
+#form .bloco.info .item {
+    margin-bottom: 3px;
+}
+
+#form .bloco.info input {
+    width: 100%;
+    max-width: 435px;
+    padding: 5px 10px;
+    border: 1px solid #d0dbdd;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#form .bloco .check .title {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#form select {
+    float: right;
+    margin: 10px 30px 0 0;
+    padding: 5px;
+}
+
+#form textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#form .bloco.ref {
+    padding-right: 30px;
+}
+
+#captcha_box {
+    margin-top: 15px;
+}
+
+#captcha_box .item.input {
+    padding: 3px 0;
+}
+
+#captcha_box .captcha .text {
+    width: 100%;
+    max-width: 200px;
+    height: 28px;
+    padding: 2px 8px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#captcha_box .captcha .code {
+    float: right;
+    margin-left: 10px;
+}
+
+#form .bloco .check .item {
+    display: inline-block;
+}
+
+#form .bloco .btn {
+    width: auto;
+    padding: 5px 30px;
+    background-color: #a6b8bc;
+    color: #fff;
+    border: 1px solid #d0dbdd;
+    cursor: pointer;
+}
+
+#form .bloco .btn:hover {
+    background-color: #00a6b6;
+}
+
+#rodape {
+    margin: 30px 0;
+}
+
+#rodape .selos {
+    margin: 0;
+}
+
+#rodape .selos .item {
+    margin-left: 25px;
+}
+
+#rodape .logo {
+    display: block;
+    width: 76px;
+    height: 61px;
+    margin: 0 auto;
+    background: url("imgs/logo-rodape.png") no-repeat left top;
+    text-indent: -9999px;
+}
+
+.erro {
+    color: #641f1f !important;
+    border-color: #e7b4b2 !important;
+}
+
+/* Breakpoints */
+@media (max-width: 1280px) {
+    .title {
+        font-size: 16px;
+    }
+
+    #form .bloco.info .item {
+        margin-bottom: 10px;
+    }
+
+
+    #form .bloco.info label {
+        display: block;
+        width: auto;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    #form .bloco.info input {
+        max-width: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    #conteudo .limite {
+        padding: 0 15px;
+    }
+
+    #video {
+        -moz-box-shadow: 0 0 10px rgba(0,0,0,.6);
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,.6);
+        box-shadow: 0 0 10px rgba(0,0,0,.6);
+    }
+}
+
+@media (max-width: 980px) {
+    #form .bloco .left {
+        width: 40%;
+    }
+
+    #form .bloco .right:not(.btn) {
+        width: 60%;
+    }
+
+    #form .bloco .check .item {
+        display: block;
+        margin: 5px 5px 0 0;
+    }
+
+    #form select {
+        float: none;
+        display: block;
+        margin: 0 0 15px 0;
+    }
+}
+
+@media (max-width: 640px) {
+    #form form {
+        font-size: 14px;
+    }
+
+    #form .bloco {
+        padding: 0 0 0 25px;
+        border: 0 none;
+    }
+
+    #texto {
+        padding-left: 0;
+    }
+
+    #form .bloco .left, #form .bloco .right:not(.btn) {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-right: 0 none;
+        border-bottom: 1px solid #d0dbdd;
+    }
+
+    #form .bloco .right:not(.btn) {
+        padding-left: 0;
+    }
+
+    #captcha_box.right {
+        border-bottom: 0 none !important;
+    }
+
+    #form .bloco .check .item {
+        display: inline-block;
+    }
+
+    #form .bloco.info label {
+        display: inline-block;
+        width: 100px;
+    }
+
+    #form .bloco.info input {
+        width: 80%;
+    }
+
+    #form .bloco .tel span {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 768px) {
+    #texto .title {
+        float: none;
+        width: auto;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+        background: none;
+        font-size: 24px;
+    }
+
+    #rodape .logo {
+        margin: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    #form .bloco {
+        padding: 0 !important;
+    }
+
+    #form .bloco .left {
+        padding-right: 0;
+    }
+
+    #form .bloco.info input {
+        width: 100%;
+    }
+
+    #captcha_box .item.input {
+        width: 40%;
+    }
+
+    #captcha_box .captcha .text {
+        max-width: none;
+    }
+}
+
+@media (max-width: 450px) {
+    #captcha_box .title {
+        display: block !important;
+    }
+
+    #captcha_box .item.input {
+        width: 100%;
+    }
+
+    #captcha_box .item.refresh {
+        margin-top: 8px;
+    }
+
+    #rodape .comodo {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    #cabecalho .logo {
+        width: 60%;
+    }
+}
